@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>欢迎使用在线答题系统</title>
+
+<link rel="stylesheet" href="css/web.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<form  action="LoginServlet" method="post"  id="login-form" class="login-form" autocomplete="off" role="main">
+  <img id="logo" src="img/logo.png">
+  <h1 class="a11y-hidden">登录表单</h1>
+  <div>
+    <label class="label-email">
+      <input type="text" class="text" id="studentNo" name="studentNo" placeholder="用户名" tabindex="1" required />
+      <span class="required">学号</span>
+    </label>
+  </div>
+  <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
+  <label class="label-show-password" for="show-password">
+    <span>记住密码</span>
+  </label>
+  <div>
+    <label class="label-password">
+      <input type="text" class="text" id="password" name="password" placeholder="密码" tabindex="2" required />
+      <span class="required">密码</span>
+    </label>
+  </div>
+  <input type="submit" id="send" value="登录" />
+  <div class="email">
+    <a href="#">忘记密码？</a>
+  </div>
+</form>
+<div id="lastword">
+<span>2020 itstudy.co.jp.inc.版权所有</span>
+</div>  
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#send").click(function(){
+		//判断学号的位数和数字
+	    var studentNo = $("#studentNo").val();
+		 if(studentNo.length != 10 || isNaN(studentNo)){
+			$("#studentNo").attr("class","error");
+			return false;
+		}else{
+			$("#studentNo").attr("class","");
+		}  
+		
+	});
+});
+</script>
+</body>
+</html>

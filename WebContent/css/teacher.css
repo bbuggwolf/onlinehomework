@@ -1,0 +1,112 @@
+* {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        #header {
+            width: 95%;
+            text-align: center;
+            border-bottom: 8px solid #0070D2;
+            height: 130px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        #header1 {
+            height: 45%;
+            text-align: left;
+            /* border: 1px solid #00f; */
+        }
+        
+        #header1_line {
+            width: 10%;
+            /* border: 1px solid #0f0; */
+            margin: 10px;
+            float: left;
+        }
+        
+        #header1_line ul li {
+            border: 1px solid #686868;
+            height: 2px;
+            line-height: 3px;
+            list-style: none;
+            width: 35px;
+            margin: 8px 0;
+            background: #6A6866;
+        }
+        
+        #header1_img {
+            width: 30%;
+            /* border: 1px solid #00f; */
+            float: left;
+            text-align: left;
+            margin: 10px 0;
+        }
+        
+        #header1_img img {
+            width: 35%;
+            height: 30%;
+        }
+        
+        #header1_a {
+            /* border: 1px solid #f00; */
+            float: right;
+        }
+        
+        #header1_a a {
+            display: inline-block;
+            /* width: 300px; */
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        
+        #header1_a a:first-child {
+            width: 200px;
+            background: #0070D2;
+            color: #fff;
+            margin: 5px 20px;
+            border: 1px solid #0070D2;
+            background: #0070D2;
+        }
+        
+        #header1_a a:nth-child(2) {
+            width: 150px;
+            background: #fff;
+            color: #0070D2;
+            border: 1px solid #F1F1F1;
+            margin: 5px;
+            background: #fff;
+        }
+        
+        #header_search {
+            height: 50px;
+            border: 1px solid #F1F1F1;
+            width: 100%;
+        }
+        
+        #header_search img {
+            width: 6%;
+            height: 100%;
+            float: left;
+        }
+        
+        #header_search input {
+            width: 90%;
+            display: inline-block;
+            height: 96%;
+            text-align: left;
+            padding-left: 30px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            color: #686868;
+            font-size: 25px;
+            float: left;
+        }
+        
+        .clearBoth {
+            clear: both;
+        }
